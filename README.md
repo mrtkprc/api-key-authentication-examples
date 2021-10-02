@@ -20,7 +20,7 @@ public class ApiKeyMiddleware
     }
     public async Task InvokeAsync(HttpContext context)
     {
-        //follow same validations in ApiKeyAuthAttribute.cs
+        //follow same validations in method OnActionExecutionAsync(ApiKeyAuthAttribute.cs)
         await _next(context);_
     }
 }
